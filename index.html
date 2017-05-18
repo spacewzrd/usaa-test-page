@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recycle</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="top-half">
+
+      <div class="nav">
+        <button class="logo" type="button" name="button">LOGO</button>
+        <div class="nav-links">
+          <a href="#">FAQ</a>
+          <a href="#">Generic Schedule</a>
+          <a href="#">Generic Text</a>
+        </div>
+      </div>
+
+      <div class="top-div">
+        <div class="top-text">
+          Text <b>Everyday, Everything, Everywhere</b> <br>
+          and your generic text <b>fully-funded Text</b>
+        </div>
+        <div class="inputs">
+          <input type="text" name="" value="" placeholder="Email Address">
+          <select class="" name="">
+            <option value="Select your District">Select your District</option>
+          </select>
+          <button class="go" type="button" name="button" style="margin:1em;">GO</button>
+        </div>
+        <!-- Static right now  -->
+        <div class="checkbox">
+          <img src="checked.png" alt="">
+          <p class="check-text">I’d like to receive updates from Austin Resource Recovery about this program</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-half">
+      <div class="big-number">
+        <div class="big-bottom-text">There are currently
+          <br>
+          <!-- <span style="color:#5affa8;font-size: 6rem;" class="count">1,423</span> -->
+          <span class="count" style="color:#5affa8;font-size: 6rem;">1423</span>
+          <br>
+          Pledges from the 10
+          <br>
+          Districts of City,ST
+        </div>
+      </div>
+      <div class="">
+        <img src="dividersmall.png" alt="" style="padding-top:1em;">
+      </div>
+      <div class="number-list">
+        <img src="bars.png" alt="" style="margin-top:2em;">
+      </div>
+    </div>
+
+    <div class="footer">
+      @2015 Generic Text
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="recycle.js"></script>
+    <script type="text/javascript">
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    </script>
+  </body>
+</html>

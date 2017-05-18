@@ -1,0 +1,160 @@
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+html,body{
+  margin: 0px;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration: none;
+  color: white;
+  padding: .5em
+}
+button{
+  background-color: white;
+  color:  #4d7abc;
+  font-weight: bold;
+  border: none;
+}
+input{
+  background-color: #004b8e;
+  padding: 10px;
+  border: solid 1px #004b8e;
+  box-shadow: inset 1px 1px 2px 0 #004b8e;
+  transition: box-shadow 0.3s;
+  color: white;
+  margin: 1em;
+  width: 33%;
+  border-radius: .5em
+}
+select{
+  background-color: #004b8e;
+  padding: 10px;
+  border: solid 1px #004b8e;
+  box-shadow: inset 1px 1px 2px 0 #004b8e;
+  transition: box-shadow 0.3s;
+  color: white;
+  margin: 1em;
+  width: 33%;
+  border-radius: .5em;
+}
+.top-half{
+  background-image: url(bigR2.png);
+  background-repeat: no-repeat;
+  background-size: auto 230%;
+  background-color: #4071b6;
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+
+}
+.bottom-half{
+
+  background-color: #4d7abc;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-links{
+  margin: 1em;
+}
+.logo{
+  margin-left: .5em;
+  margin-top: .3em;
+  width: 7em;
+  height: 3em;
+}
+.top-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 5em;
+}
+.top-text{
+  color: white;
+  font-size: 200%;
+}
+.inputs{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+.go{
+  width: 33%;
+  border-radius: .5em
+}
+.checkbox{
+  width: 45%;
+  display: flex;
+}
+.check-text{
+  color: white;
+  text-align: center;
+  margin-left: 6em;
+}
+
+.vertical-line {
+  border-left: thin solid white;
+  /*height: 50em;*/
+}
+.big-number{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number-list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  -webkit-animation: fadein 3s;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: white;
+  text-align: center;
+  color: #4d7abc;
+}
+
+.big-bottom-text{
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+
+/*animation and media Q*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media (max-width: 425px) {
+  .big-bottom-text{
+    margin-bottom: 9em;
+  }
+}
